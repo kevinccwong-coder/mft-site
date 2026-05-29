@@ -1,65 +1,130 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import Resources from "@/components/Resources";
+import HomeFAQ from "@/components/HomeFAQ";
+import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "房角石家庭服務中心 | 香港婚姻輔導、家庭治療及心理創傷治療",
+  description:
+    "提供香港專業、保密的個人心理輔導、婚姻治療、家庭治療及心理創傷輔導（如外遇修復、情緒抑鬱、童年創傷、PTSD）。由香港大學碩士、美國 AAMFT 臨床院士主理。",
+  keywords: [
+    "婚姻輔導",
+    "家庭治療",
+    "心理輔導",
+    "香港婚姻輔導",
+    "心理創傷治療",
+    "家庭暴力輔導",
+    "婚外情輔導",
+    "婆媳衝突",
+    "隱蔽青年",
+    "情緒輔導",
+    "PTSD",
+    "外遇修復",
+    "童年創傷",
+  ],
+  openGraph: {
+    title: "房角石家庭服務中心 | 香港婚姻輔導、家庭治療及心理創傷治療",
+    description:
+      "提供香港專業、保密的個人心理輔導、婚姻治療、家庭治療及心理創傷輔導。由香港大學碩士、美國 AAMFT 臨床院士主理。（上環｜灣仔）",
+    url: "https://www.familycornerstone.com",
+    siteName: "房角石家庭服務中心",
+    locale: "zh_HK",
+    type: "website",
+    images: [
+      {
+        url: "https://static.wixstatic.com/media/b709e0_ec1a15e211554eb49239af1b26aff339%7Emv2.jpg",
+        width: 2500,
+        height: 1330,
+        alt: "房角石家庭服務中心 — 香港婚姻輔導、家庭治療及心理創傷治療",
+      },
+    ],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.familycornerstone.com#sheungwan",
+      name: "房角石家庭服務中心（上環）",
+      alternateName: "Cornerstone Family Service Centre (Sheung Wan)",
+      url: "https://www.familycornerstone.com",
+      telephone: "+85292679822",
+      description:
+        "香港專業婚姻輔導、家庭治療及心理創傷治療服務。由香港大學碩士、美國 AAMFT 臨床院士主理。",
+      image:
+        "https://static.wixstatic.com/media/b709e0_ec1a15e211554eb49239af1b26aff339%7Emv2.jpg",
+      priceRange: "$$",
+      areaServed: "香港",
+      serviceType: [
+        "婚姻輔導",
+        "家庭治療",
+        "心理創傷治療",
+        "情緒與壓力輔導",
+        "音樂治療",
+      ],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "永樂街93-103號協成行上環中心1701室",
+        addressLocality: "上環",
+        addressRegion: "香港",
+        addressCountry: "HK",
+      },
+      hasMap: "https://maps.google.com/?q=香港上環永樂街93-103號協成行上環中心1701室",
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.familycornerstone.com#wanchai",
+      name: "房角石家庭服務中心（灣仔）",
+      alternateName: "Cornerstone Family Service Centre (Wan Chai)",
+      url: "https://www.familycornerstone.com",
+      telephone: "+85292679822",
+      description:
+        "香港專業婚姻輔導、家庭治療及心理創傷治療服務。由香港大學碩士、美國 AAMFT 臨床院士主理。",
+      image:
+        "https://static.wixstatic.com/media/b709e0_ec1a15e211554eb49239af1b26aff339%7Emv2.jpg",
+      priceRange: "$$",
+      areaServed: "香港",
+      serviceType: [
+        "婚姻輔導",
+        "家庭治療",
+        "心理創傷治療",
+        "情緒與壓力輔導",
+        "音樂治療",
+      ],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "駱克道54-62號博匯大廈8樓",
+        addressLocality: "灣仔",
+        addressRegion: "香港",
+        addressCountry: "HK",
+      },
+      hasMap: "https://maps.google.com/?q=香港灣仔駱克道54-62號博匯大廈8樓",
+    },
+  ],
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Resources />
+        <HomeFAQ />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
