@@ -60,13 +60,13 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@familycornerstone.com"
+                  href="mailto:fsc.cornerstone@gmail.com"
                   className="group inline-flex items-center gap-3 text-sm text-white/75 transition-colors hover:text-white"
                 >
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-primary/60">
                     <Mail size={13} />
                   </span>
-                  info@familycornerstone.com
+                  fsc.cornerstone@gmail.com
                 </a>
               </li>
               <li>
