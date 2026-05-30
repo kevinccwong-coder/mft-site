@@ -1,10 +1,22 @@
 import { CheckCircle, ScrollText } from "lucide-react";
 
-const qualifications = [
-  "香港大學社會科學碩士（輔導學）",
-  "美國婚姻及家庭治療協會（AAMFT）臨床院士",
-  "美國婚姻及家庭治療協會（AAMFT）核准督導",
-  "亞洲家庭治療學院院士",
+const qualifications: { text: string; href?: string }[] = [
+  {
+    text: "香港大學社會科學碩士（婚姻及家庭治療）",
+    href: "https://web.socsc.hku.hk/",
+  },
+  {
+    text: "美國婚姻及家庭治療協會（AAMFT）臨床院士",
+    href: "https://www.aamft.org/",
+  },
+  {
+    text: "美國婚姻及家庭治療協會（AAMFT）核准督導",
+    href: "https://www.aamft.org/",
+  },
+  {
+    text: "亞洲家庭治療學院院士",
+    href: "https://www.acafamilytherapy.org/",
+  },
 ];
 
 const values = [
@@ -58,7 +70,18 @@ export default function About() {
                     size={16}
                     className="mt-0.5 shrink-0 text-primary"
                   />
-                  <span className="text-sm text-secondary/75">{q}</span>
+                  {q.href ? (
+                    <a
+                      href={q.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-secondary/75 transition-colors hover:text-primary hover:underline"
+                    >
+                      {q.text} ↗
+                    </a>
+                  ) : (
+                    <span className="text-sm text-secondary/75">{q.text}</span>
+                  )}
                 </div>
               ))}
             </div>

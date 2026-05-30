@@ -87,7 +87,27 @@ export default function Services() {
                 {s.highlights.map((h, j) => (
                   <li key={j} className="flex items-start gap-2 text-sm text-secondary/70">
                     <span className="mt-0.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-primary/60" aria-hidden />
-                    {h}
+                    {h.includes("C-PTSD") ? (
+                      <a
+                        href="https://oxfordhealth.nhs.uk/ohspic/problems/c-ptsd/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline"
+                      >
+                        {h} ↗
+                      </a>
+                    ) : h.includes("PTSD") ? (
+                      <a
+                        href="https://www.nhs.uk/mental-health/conditions/ptsd-post-traumatic-stress-disorder/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline"
+                      >
+                        {h} ↗
+                      </a>
+                    ) : (
+                      h
+                    )}
                   </li>
                 ))}
               </ul>

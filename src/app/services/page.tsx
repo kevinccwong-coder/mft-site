@@ -134,6 +134,28 @@ export default function ServicesPage() {
                     </p>
                     <p className="mt-3 text-sm leading-relaxed text-secondary/70">
                       {s.desc}
+                      {s.title === "心理創傷治療" && (
+                        <>
+                          {" "}
+                          <a
+                            href="https://www.nhs.uk/mental-health/conditions/ptsd-post-traumatic-stress-disorder/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline"
+                          >
+                            了解更多關於PTSD ↗
+                          </a>
+                          {" | "}
+                          <a
+                            href="https://oxfordhealth.nhs.uk/ohspic/problems/c-ptsd/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline"
+                          >
+                            C-PTSD ↗
+                          </a>
+                        </>
+                      )}
                     </p>
                   </div>
 
@@ -153,7 +175,27 @@ export default function ServicesPage() {
                             className="mt-0.5 shrink-0 text-primary"
                             aria-hidden
                           />
-                          {area}
+                          {area.includes("C-PTSD") ? (
+                            <a
+                              href="https://oxfordhealth.nhs.uk/ohspic/problems/c-ptsd/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-primary hover:underline"
+                            >
+                              {area} ↗
+                            </a>
+                          ) : area.includes("PTSD") ? (
+                            <a
+                              href="https://www.nhs.uk/mental-health/conditions/ptsd-post-traumatic-stress-disorder/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-primary hover:underline"
+                            >
+                              {area} ↗
+                            </a>
+                          ) : (
+                            area
+                          )}
                         </li>
                       ))}
                     </ul>

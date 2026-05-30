@@ -23,7 +23,7 @@ export default function Resources() {
           {/* Resource cards */}
           <div className="mt-12 space-y-5">
             <a
-              href="https://www1.hkej.com/features/article?q=%23李維榕"
+              href="https://www.acafamilytherapy.org/wylpublication"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-start gap-5 rounded-2xl border border-secondary/5 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/10 hover:shadow-lg hover:shadow-primary/5"
@@ -37,7 +37,8 @@ export default function Resources() {
                   <ExternalLink size={13} className="shrink-0" />
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-secondary/65">
-                  李維榕博士為亞洲家庭治療學院院士，多年於《信報》撰寫家庭治療專欄，
+                  李維榕博士為
+                  <a href="https://www.acafamilytherapy.org/" target="_blank" rel="noopener noreferrer" className="text-primary transition-colors hover:text-primary-dark hover:underline">亞洲家庭治療學院 ↗</a>院士，多年於《信報》撰寫家庭治療專欄，
                   以深入淺出的筆觸剖析家庭關係的奧秘，是華人家庭治療領域的重要啟蒙讀物。
                 </p>
                 <span className="mt-2 inline-block text-xs font-medium text-primary">
