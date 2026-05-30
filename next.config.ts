@@ -41,6 +41,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/mother-in-law-conflict-2",
         permanent: true,
       },
+      {
+        source: "/single-post/2016/06/22/%E5%A9%86%E5%AA%B3%E8%A1%9D%E7%AA%81%EF%BC%88%E4%B8%80%EF%BC%89",
+        destination: "/blog/mother-in-law-conflict-1",
+        permanent: true,
+      },
 
       // ── Generic single-post catch-all ──
       {
@@ -96,6 +101,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       { source: "/blank-4", destination: "/pricing", permanent: true },
+      { source: "/fees-booking", destination: "/pricing", permanent: true },
 
       // ── FAQ ──
       {
