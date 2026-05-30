@@ -11,6 +11,19 @@ const navLinks = [
   { label: "網誌", href: "/blog" },
 ];
 
+function NavLink({ href, label }: { href: string; label: string }) {
+  return (
+    <a
+      href={href}
+      className="relative px-3 py-2 text-sm font-medium text-secondary/75 transition-colors duration-300 hover:text-secondary
+        after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:rounded-full after:bg-primary after:transition-all after:duration-300
+        hover:after:left-0 hover:after:w-full"
+    >
+      {label}
+    </a>
+  );
+}
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -27,17 +40,16 @@ export default function Navbar() {
       className={
         "fixed inset-x-0 top-0 z-50 transition-all duration-300 " +
         (scrolled
-          ? "bg-white/80 backdrop-blur-lg shadow-xs"
+          ? "bg-white/80 backdrop-blur-xl shadow-xs"
           : "bg-transparent")
       }
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3">
-          {/* Custom SVG icon — cornerstone + home roof */}
+        <a href="/" className="flex items-center gap-2.5">
           <svg
-            width="40"
-            height="40"
+            width="36"
+            height="36"
             viewBox="0 0 40 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -60,11 +72,11 @@ export default function Navbar() {
               strokeLinejoin="round"
             />
           </svg>
-          <div className="leading-tight">
-            <span className="block text-sm font-bold text-secondary">
+          <div className="leading-snug">
+            <span className="block text-sm font-bold text-secondary tracking-wide">
               房角石家庭服務中心
             </span>
-            <span className="block text-[10px] tracking-wider text-secondary/55">
+            <span className="block text-[10px] tracking-[0.15em] text-secondary/55">
               Cornerstone Family Service Centre
             </span>
           </div>
@@ -73,32 +85,26 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-secondary/80 transition-colors hover:bg-primary-light/60 hover:text-secondary"
-            >
-              {link.label}
-            </a>
+            <NavLink key={link.href} href={link.href} label={link.label} />
           ))}
         </nav>
 
         {/* Desktop CTA buttons */}
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2.5 md:flex">
           <a
             href="tel:+85292679822"
-            className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-primary-dark active:scale-95"
+            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-all duration-300 hover:border-primary hover:bg-primary-light/30 active:scale-95"
           >
-            <Phone size={14} aria-hidden />
+            <Phone size={13} aria-hidden />
             致電預約
           </a>
           <a
             href="https://wa.me/85292679822?text=你好，我想查詢關於家庭/婚姻輔導服務"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-whatsapp px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-whatsapp-dark active:scale-95"
+            className="inline-flex items-center gap-1.5 rounded-full bg-whatsapp px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-whatsapp-dark hover:shadow-md active:scale-95"
           >
-            <MessageCircle size={14} aria-hidden />
+            <MessageCircle size={13} aria-hidden />
             WhatsApp 諮詢
           </a>
         </div>
@@ -106,10 +112,10 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setOpen(!open)}
-          className="flex items-center rounded-lg p-2 text-secondary transition-colors hover:bg-primary-light/60 md:hidden"
+          className="flex items-center rounded-lg p-2 text-secondary transition-colors hover:bg-primary-light/50 md:hidden"
           aria-label={open ? "關閉選單" : "開啟選單"}
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
@@ -117,17 +123,17 @@ export default function Navbar() {
       {open && (
         <>
           <div
-            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden"
+            className="fixed inset-0 z-40 bg-black/15 backdrop-blur-sm md:hidden"
             onClick={() => setOpen(false)}
           />
-          <div className="absolute right-4 top-full z-50 w-64 origin-top-right rounded-2xl border border-secondary/10 bg-white p-3 shadow-lg md:hidden">
-            <nav className="flex flex-col gap-1">
+          <div className="absolute right-3 top-full z-50 w-64 origin-top-right rounded-2xl border border-secondary/10 bg-white/95 backdrop-blur-xl p-3 shadow-lg md:hidden">
+            <nav className="flex flex-col gap-0.5">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-xl px-4 py-3 text-sm font-medium text-secondary/80 transition-colors hover:bg-primary-light/60"
+                  className="rounded-xl px-4 py-3 text-sm font-medium text-secondary/75 transition-colors hover:bg-primary-light/50 hover:text-secondary"
                 >
                   {link.label}
                 </a>
@@ -137,9 +143,9 @@ export default function Navbar() {
             <div className="flex flex-col gap-2 px-2">
               <a
                 href="tel:+85292679822"
-                className="flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-dark"
+                className="flex items-center justify-center gap-2 rounded-full border border-primary/30 px-4 py-2.5 text-sm font-semibold text-primary transition-all hover:bg-primary-light/30"
               >
-                <Phone size={14} />
+                <Phone size={13} aria-hidden />
                 致電預約
               </a>
               <a
@@ -148,7 +154,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 rounded-full bg-whatsapp px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-whatsapp-dark"
               >
-                <MessageCircle size={14} />
+                <MessageCircle size={13} aria-hidden />
                 WhatsApp 諮詢
               </a>
             </div>

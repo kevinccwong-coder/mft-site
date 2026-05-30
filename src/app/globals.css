@@ -21,4 +21,12 @@ body {
   background: var(--color-warm-bg);
   color: var(--color-secondary);
   font-family: var(--font-sans);
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+/* Improve readability for long-form text */
+p, li, blockquote {
+  line-height: 1.8;
+  letter-spacing: 0.02em;
 }
