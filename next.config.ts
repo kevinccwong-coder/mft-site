@@ -183,6 +183,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blank-5/categories/%E5%A9%9A%E5%A7%BB%E8%BC%94%E5%B0%8E",
+        destination: "/blog/is-counseling-useful",
+        permanent: true,
+      },
+      {
         source: "/blank-5/categories/:path*",
         destination: "/blog",
         permanent: true,
