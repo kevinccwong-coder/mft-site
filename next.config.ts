@@ -59,6 +59,11 @@ const nextConfig: NextConfig = {
 
       // ── Specific old blog post redirects (Wix Chinese URLs → new slugs) ──
       {
+        source: "/blog/%E5%BF%83%E7%90%86%E8%BC%94%E5%B0%8E%E6%9C%89%E7%94%A8%E5%97%8E%EF%BC%9F",
+        destination: "/blog/is-counseling-useful",
+        permanent: true,
+      },
+      {
         source: "/blog/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%9C%80%E8%A6%81%E5%A9%9A%E5%A7%BB%E8%BC%94%E5%B0%8E%E5%91%A2%EF%BC%9F",
         destination: "/blog/why-marriage-counseling",
         permanent: true,
