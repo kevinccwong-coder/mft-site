@@ -14,6 +14,35 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: true,
       },
+
+      // ── Specific old blog post redirects (Wix Chinese URLs → new slugs) ──
+      {
+        source: "/blog/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%9C%80%E8%A6%81%E5%A9%9A%E5%A7%BB%E8%BC%94%E5%B0%8E%E5%91%A2%EF%BC%9F",
+        destination: "/blog/why-marriage-counseling",
+        permanent: true,
+      },
+      {
+        source: "/single-post/2016/10/12/%E5%A4%AB%E5%A6%BB%E8%A1%9D%E7%AA%81",
+        destination: "/blog/marital-conflict-resolution",
+        permanent: true,
+      },
+      {
+        source: "/single-post/2017/05/14/%E9%A0%90%E9%98%B2%E3%80%8C%E5%A9%9A%E5%A4%96%E6%83%85%E5%A4%96%E9%81%87%E3%80%8D%E6%8C%87%E5%8D%97",
+        destination: "/blog/prevent-affairs",
+        permanent: true,
+      },
+      {
+        source: "/single-post/2017/06/06/%E5%AE%B6%E5%BA%AD%E6%B2%BB%E7%99%82%E7%9A%84%E4%B8%80%E6%A9%AB%E4%B8%80%E7%9B%B4",
+        destination: "/blog/family-therapy-basics",
+        permanent: true,
+      },
+      {
+        source: "/single-post/2016/06/23/%E5%A9%86%E5%AA%B3%E8%A1%9D%E7%AA%81%EF%BC%88%E4%BA%8C%EF%BC%89",
+        destination: "/blog/mother-in-law-conflict-2",
+        permanent: true,
+      },
+
+      // ── Generic single-post catch-all ──
       {
         source: "/single-post/:slug",
         destination: "/blog/:slug",
