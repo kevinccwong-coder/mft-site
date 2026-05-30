@@ -97,6 +97,15 @@ export default function ServicesPage() {
               所有服務均由美國婚姻及家庭治療協會（AAMFT）臨床院士主理。
             </p>
           </div>
+
+          {/* Banner image */}
+          <div className="mt-10 flex justify-center">
+            <img
+              src="/image002.png"
+              alt="房角石家庭服務中心 — 專業婚姻輔導及家庭治療"
+              className="h-auto w-full max-w-2xl rounded-2xl object-cover shadow-sm"
+            />
+          </div>
         </section>
 
         {/* Service details */}

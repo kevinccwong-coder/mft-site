@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 
 const navLinks = [
@@ -26,60 +26,17 @@ function NavLink({ href, label }: { href: string; label: string }) {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
-    <header
-      className={
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300 " +
-        (scrolled
-          ? "bg-white/80 backdrop-blur-xl shadow-xs"
-          : "bg-transparent")
-      }
-    >
+    <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-xs">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2.5">
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="shrink-0"
-            aria-label="房角石家庭服務中心標誌"
-          >
-            {/* Roof / shelter — primary rose */}
-            <path
-              d="M3 28 L20 4 L37 28"
-              stroke="#B0586E"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            {/* Cornerstone diamond — secondary purple-gray */}
-            <path
-              d="M20 21 L28 28 L20 35 L12 28 Z"
-              stroke="#4A3F5C"
-              strokeWidth="1.5"
-              strokeLinejoin="round"
-            />
-          </svg>
-          <div className="leading-snug">
-            <span className="block text-sm font-bold text-secondary tracking-wide">
-              房角石家庭服務中心
-            </span>
-            <span className="block text-[10px] tracking-[0.15em] text-secondary/55">
-              Cornerstone Family Service Centre
-            </span>
-          </div>
+        <a href="/" className="flex items-center shrink-0">
+          <img
+            src="/logo.jpg"
+            alt="房角石家庭服務中心 Cornerstone Family Service Centre"
+            className="h-16 w-auto sm:h-[72px]"
+          />
         </a>
 
         {/* Desktop nav */}
