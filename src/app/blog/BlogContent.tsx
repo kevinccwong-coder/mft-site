@@ -29,7 +29,7 @@ export default function BlogContent() {
                 "rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all " +
                 (activeCategory === null
                   ? "bg-primary-light/60 text-primary-dark"
-                  : "bg-secondary-light/30 text-secondary/60 hover:bg-secondary-light/60")
+                  : "bg-secondary-light/30 text-secondary/70 hover:bg-secondary-light/60")
               }
             >
               全部
@@ -44,7 +44,7 @@ export default function BlogContent() {
                   "rounded-full px-3.5 py-1.5 text-xs font-medium transition-all " +
                   (activeCategory === cat
                     ? "bg-primary-light/60 text-primary-dark font-semibold"
-                    : "bg-secondary-light/30 text-secondary/60 hover:bg-secondary-light/60")
+                    : "bg-secondary-light/30 text-secondary/70 hover:bg-secondary-light/60")
                 }
               >
                 {cat}
@@ -58,7 +58,7 @@ export default function BlogContent() {
       <section className="bg-white pb-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {sorted.length === 0 ? (
-            <p className="py-20 text-center text-sm text-secondary/50">
+            <p className="py-20 text-center text-sm text-secondary/70">
               此分類尚無文章，敬請期待。
             </p>
           ) : (
@@ -70,7 +70,7 @@ export default function BlogContent() {
                   className="group block rounded-2xl border border-secondary/5 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/10 hover:shadow-lg hover:shadow-primary/5 sm:p-8"
                 >
                   <article>
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-secondary/50">
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-secondary/70">
                       <span className="rounded-full bg-primary-light/50 px-3 py-1 font-medium text-primary-dark">
                         {post.category}
                       </span>
@@ -82,16 +82,16 @@ export default function BlogContent() {
                     <h2 className="mt-3 text-lg font-semibold text-secondary transition-colors group-hover:text-primary sm:text-xl">
                       {post.title}
                     </h2>
-                    <p className="mt-2 text-sm leading-relaxed text-secondary/65">
+                    <p className="mt-2 text-sm leading-relaxed text-secondary/75">
                       {post.excerpt}
                     </p>
                     {post.tags && post.tags.length > 0 && (
                       <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                        <Tag size={11} className="text-secondary/30" aria-hidden />
+                        <Tag size={11} className="text-secondary/50" aria-hidden />
                         {post.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="rounded-md bg-secondary-light/30 px-2 py-0.5 text-[11px] text-secondary/55"
+                            className="rounded-md bg-secondary-light/30 px-2 py-0.5 text-[11px] text-secondary/70"
                           >
                             {tag}
                           </span>

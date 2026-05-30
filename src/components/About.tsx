@@ -75,7 +75,7 @@ export default function About() {
                       href={q.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-secondary/75 transition-colors hover:text-primary hover:underline"
+                      className="text-sm text-secondary/75 transition-colors hover:text-primary underline underline-offset-2 decoration-1 decoration-primary/30 hover:decoration-primary"
                     >
                       {q.text} ↗
                     </a>
@@ -89,7 +89,7 @@ export default function About() {
 
           {/* Right: Values */}
           <div className="space-y-8">
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-secondary/50">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-secondary/70">
               我們的信念
             </h3>
             {values.map((v, i) => (
@@ -107,7 +107,7 @@ export default function About() {
                 <p className="relative text-base leading-relaxed font-medium text-secondary">
                   {v.quote}
                 </p>
-                <p className="mt-3 text-xs leading-relaxed text-secondary/50">
+                <p className="mt-3 text-xs leading-relaxed text-secondary/70">
                   {v.author}
                 </p>
               </div>

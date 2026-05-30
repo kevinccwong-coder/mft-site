@@ -34,7 +34,7 @@ export default function HomeFAQ() {
             <h2 className="mt-4 text-2xl font-bold text-secondary sm:text-3xl">
               你對輔導的疑問
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-secondary/65">
+            <p className="mt-3 text-sm leading-relaxed text-secondary/75">
               第一次接受輔導總會有很多疑問，以下是我們最常被問到的問題。
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function HomeFAQ() {
                   <ChevronDown
                     size={18}
                     className={
-                      "mt-0.5 shrink-0 text-secondary/40 transition-transform duration-300 " +
+                      "mt-0.5 shrink-0 text-secondary/60 transition-transform duration-300 " +
                       (openIndex === i ? "rotate-180" : "")
                     }
                     aria-hidden
@@ -79,7 +79,7 @@ export default function HomeFAQ() {
                   itemType="https://schema.org/Answer"
                 >
                   <p
-                    className="text-sm leading-relaxed text-secondary/65"
+                    className="text-sm leading-relaxed text-secondary/75"
                     itemProp="text"
                   >
                     {faq.a}

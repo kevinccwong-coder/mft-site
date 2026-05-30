@@ -104,7 +104,7 @@ export default function FAQPage() {
             <h2 className="text-2xl font-bold text-secondary">
               還有其他問題？
             </h2>
-            <p className="mt-3 text-sm text-secondary/65">
+            <p className="mt-3 text-sm text-secondary/75">
               我們很樂意與你直接對話，解答你的疑問。
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

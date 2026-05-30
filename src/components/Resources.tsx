@@ -13,7 +13,7 @@ export default function Resources() {
             <h2 className="mt-4 text-2xl font-bold text-secondary sm:text-3xl">
               推薦閱讀及專業參考
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-secondary/65">
+            <p className="mt-3 text-sm leading-relaxed text-secondary/75">
               我們深信知識就是力量。以下資源能幫助你更深入了解婚姻及家庭治療，
               <br className="hidden sm:inline" />
               也見證了我們所信賴的專業傳統。
@@ -36,9 +36,9 @@ export default function Resources() {
                   李維榕博士 — 信報專欄
                   <ExternalLink size={13} className="shrink-0" />
                 </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-secondary/65">
+                <p className="mt-1.5 text-sm leading-relaxed text-secondary/75">
                   李維榕博士為
-                  <a href="https://www.acafamilytherapy.org/" target="_blank" rel="noopener noreferrer" className="text-primary transition-colors hover:text-primary-dark hover:underline">亞洲家庭治療學院 ↗</a>院士，多年於《信報》撰寫家庭治療專欄，
+                  <span className="font-medium text-primary">亞洲家庭治療學院</span>院士，多年於《信報》撰寫家庭治療專欄，
                   以深入淺出的筆觸剖析家庭關係的奧秘，是華人家庭治療領域的重要啟蒙讀物。
                 </p>
                 <span className="mt-2 inline-block text-xs font-medium text-primary">
@@ -56,7 +56,7 @@ export default function Resources() {
                   <h3 className="text-base font-semibold text-secondary">
                     婚姻及家庭治療相關書籍
                   </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-secondary/65">
+                  <p className="mt-1.5 text-sm leading-relaxed text-secondary/75">
                     我們出版及推薦多本關於婚姻及家庭治療的書籍，涵蓋家庭系統理論、
                     夫妻溝通技巧、家庭治療個案分析等範疇。歡迎向我們查詢書目推薦。
                   </p>
@@ -68,7 +68,7 @@ export default function Resources() {
                     ].map((book, i) => (
                       <span
                         key={i}
-                        className="rounded-full bg-secondary-light/30 px-3 py-1 text-xs text-secondary/60"
+                        className="rounded-full bg-secondary-light/30 px-3 py-1 text-xs text-secondary/70"
                       >
                         {book}
                       </span>

@@ -33,8 +33,10 @@ export default function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0">
           <img
-            src="/cornerstone-family-service-centre-logo.jpg"
+            src="/cornerstone-family-service-centre-logo.webp"
             alt="房角石家庭服務中心 - 香港專業婚姻及家庭治療"
+            width={544}
+            height={155}
             className="h-16 w-auto sm:h-[72px]"
             fetchPriority="high"
           />

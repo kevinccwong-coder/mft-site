@@ -129,7 +129,7 @@ export default function ServicesPage() {
                     <h2 className="mt-4 text-xl font-bold text-secondary">
                       {s.title}
                     </h2>
-                    <p className="mt-0.5 text-sm text-secondary/50">
+                    <p className="mt-0.5 text-sm text-secondary/70">
                       {s.subtitle}
                     </p>
                     <p className="mt-3 text-sm leading-relaxed text-secondary/70">
@@ -161,7 +161,7 @@ export default function ServicesPage() {
 
                   {/* Areas */}
                   <div className="rounded-2xl border border-secondary/5 bg-white p-6 md:col-span-3">
-                    <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-secondary/50">
+                    <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-secondary/70">
                       治療範圍
                     </h3>
                     <ul className="grid gap-3 sm:grid-cols-2">
@@ -216,7 +216,7 @@ export default function ServicesPage() {
               <h2 className="mt-4 text-2xl font-bold text-secondary sm:text-3xl">
                 我們也處理這些議題
               </h2>
-              <p className="mt-3 text-sm text-secondary/65">
+              <p className="mt-3 text-sm text-secondary/75">
                 如果你面對的問題未有在此列出，歡迎 WhatsApp 我們查詢。
               </p>
             </div>
@@ -240,7 +240,7 @@ export default function ServicesPage() {
             <h2 className="text-2xl font-bold text-secondary">
               準備好踏出第一步？
             </h2>
-            <p className="mt-3 text-sm text-secondary/65">
+            <p className="mt-3 text-sm text-secondary/75">
               預約初步諮詢，讓我們了解你的需要。
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

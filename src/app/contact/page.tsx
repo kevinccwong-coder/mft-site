@@ -96,7 +96,7 @@ export default function ContactPage() {
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-light/60 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
                       <m.icon size={22} />
                     </div>
-                    <span className="text-xs text-secondary/50">{m.label}</span>
+                    <span className="text-xs text-secondary/70">{m.label}</span>
                     <span className="text-sm font-semibold text-secondary">
                       {m.value}
                     </span>
@@ -148,7 +148,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold text-secondary">
               準備好踏出第一步？
             </h2>
-            <p className="mt-3 text-sm text-secondary/65">
+            <p className="mt-3 text-sm text-secondary/75">
               立即致電或 WhatsApp 我們，預約首次免費諮詢。
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

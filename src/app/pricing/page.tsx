@@ -91,7 +91,7 @@ export default function PricingPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl">
               <h2 className="text-2xl font-bold text-secondary">服務收費</h2>
-              <p className="mt-2 text-sm text-secondary/60">
+              <p className="mt-2 text-sm text-secondary/70">
                 以下為標準收費，實際費用可能因應治療師資歷及個別情況有所調整。
               </p>
               <div className="mt-8 divide-y divide-secondary/10 rounded-2xl border border-secondary/10">
@@ -104,7 +104,7 @@ export default function PricingPage() {
                       <h3 className="font-semibold text-secondary">
                         {item.label}
                       </h3>
-                      <div className="mt-0.5 flex items-center gap-3 text-xs text-secondary/50">
+                      <div className="mt-0.5 flex items-center gap-3 text-xs text-secondary/70">
                         <span className="inline-flex items-center gap-1">
                           <Clock size={12} aria-hidden />
                           {item.duration}
@@ -120,7 +120,7 @@ export default function PricingPage() {
                   </div>
                 ))}
               </div>
-              <p className="mt-4 text-xs text-secondary/40">
+              <p className="mt-4 text-xs text-secondary/60">
                 * 本中心提供有限度之減免收費服務，經濟困難者請與我們聯絡商議。
               </p>
             </div>
@@ -134,7 +134,7 @@ export default function PricingPage() {
               <h2 className="text-center text-2xl font-bold text-secondary">
                 預約流程
               </h2>
-              <p className="mt-2 text-center text-sm text-secondary/60">
+              <p className="mt-2 text-center text-sm text-secondary/70">
                 簡單四步，讓你安心開展輔導旅程。
               </p>
               <div className="mt-12 space-y-8">
@@ -153,7 +153,7 @@ export default function PricingPage() {
                         <span className="mr-2 text-primary">{String(i + 1).padStart(2, "0")}.</span>
                         {step.title}
                       </h3>
-                      <p className="mt-1.5 text-sm leading-relaxed text-secondary/65">
+                      <p className="mt-1.5 text-sm leading-relaxed text-secondary/75">
                         {step.desc}
                       </p>
                     </div>
@@ -170,7 +170,7 @@ export default function PricingPage() {
             <h2 className="text-2xl font-bold text-secondary">
               準備好預約了嗎？
             </h2>
-            <p className="mt-3 text-sm text-secondary/65">
+            <p className="mt-3 text-sm text-secondary/75">
               歡迎致電或 WhatsApp 我們，我們很樂意回答你的問題。
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

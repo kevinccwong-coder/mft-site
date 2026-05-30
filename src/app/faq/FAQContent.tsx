@@ -59,7 +59,7 @@ function AccordionItem({
         <ChevronDown
           size={18}
           className={
-            "mt-0.5 shrink-0 text-secondary/40 transition-transform duration-300 " +
+            "mt-0.5 shrink-0 text-secondary/60 transition-transform duration-300 " +
             (isOpen ? "rotate-180" : "")
           }
           aria-hidden
@@ -71,7 +71,7 @@ function AccordionItem({
           (isOpen ? "max-h-96 pb-5" : "max-h-0")
         }
       >
-        <p className="text-sm leading-relaxed text-secondary/65">{faq.a}</p>
+        <p className="text-sm leading-relaxed text-secondary/75">{faq.a}</p>
       </div>
     </div>
   );

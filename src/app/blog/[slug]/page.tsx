@@ -42,7 +42,7 @@ export default async function PostPage({ params }: Props) {
         {/* Header */}
         <section className="bg-gradient-to-b from-primary-light/40 via-warm-bg to-white pt-32 pb-12 sm:pt-40 sm:pb-16">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap items-center gap-3 text-xs text-secondary/50">
+            <div className="flex flex-wrap items-center gap-3 text-xs text-secondary/70">
               <span className="rounded-full bg-primary-light/60 px-3 py-1 font-medium text-primary-dark">
                 {post.category}
               </span>
@@ -56,11 +56,11 @@ export default async function PostPage({ params }: Props) {
             </h1>
             {post.tags && post.tags.length > 0 && (
               <div className="mt-4 flex flex-wrap items-center gap-2">
-                <Tag size={12} className="text-secondary/40" aria-hidden />
+                <Tag size={12} className="text-secondary/60" aria-hidden />
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-md bg-secondary-light/40 px-2.5 py-0.5 text-xs text-secondary/60"
+                    className="rounded-md bg-secondary-light/40 px-2.5 py-0.5 text-xs text-secondary/70"
                   >
                     {tag}
                   </span>

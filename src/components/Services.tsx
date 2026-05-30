@@ -53,7 +53,7 @@ export default function Services() {
           <h2 className="mt-4 text-2xl font-bold text-secondary sm:text-3xl">
             專業輔導，照顧你的需要
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-secondary/65">
+          <p className="mt-3 text-sm leading-relaxed text-secondary/75">
             我們提供個人、伴侶及家庭的全面心理輔導服務，
             <br className="hidden sm:inline" />
             按你的獨特處境，度身訂造治療方案。
@@ -78,7 +78,7 @@ export default function Services() {
               <h3 className="text-lg font-semibold text-secondary">
                 {s.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-secondary/65">
+              <p className="mt-2 text-sm leading-relaxed text-secondary/75">
                 {s.desc}
               </p>
 
@@ -117,7 +117,7 @@ export default function Services() {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <p className="text-sm text-secondary/60">
+          <p className="text-sm text-secondary/70">
             想了解更多服務詳情？
           </p>
           <div className="mt-3 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -127,7 +127,7 @@ export default function Services() {
             >
               查看所有服務 →
             </a>
-            <span className="hidden text-secondary/30 sm:inline">|</span>
+            <span className="hidden text-secondary/50 sm:inline" aria-hidden>|</span>
             <a
               href={WHATSAPP_URL}
               target="_blank"

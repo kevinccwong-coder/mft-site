@@ -53,7 +53,7 @@ export default function Hero() {
             <br />
             我們願意與你共同面對挑戰
           </h2>
-          <p className="mt-5 text-base leading-relaxed text-secondary/65 sm:text-lg">
+          <p className="mt-5 text-base leading-relaxed text-secondary/75 sm:text-lg">
             由香港大學畢業、美國認證的婚姻及家庭治療師主理，
             <br className="hidden sm:inline" />
             提供專業、保密、貼心的心理輔導服務。
@@ -89,7 +89,7 @@ export default function Hero() {
               <h3 className="text-base font-semibold text-secondary">
                 {item.title}
               </h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-secondary/60">
+              <p className="mt-1.5 text-sm leading-relaxed text-secondary/70">
                 {item.desc}
               </p>
             </div>
@@ -128,7 +128,7 @@ export default function Hero() {
 
         {/* Scroll hint */}
         <div className="mt-16 flex animate-pulse justify-center">
-          <ChevronDown size={18} className="text-secondary/25" />
+          <ChevronDown size={18} className="text-secondary/70" />
         </div>
       </div>
     </section>
