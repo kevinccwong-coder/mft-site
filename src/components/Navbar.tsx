@@ -35,7 +35,7 @@ export default function Navbar() {
           <img
             src="/cornerstone-family-service-centre-logo.jpg"
             alt="房角石家庭服務中心 - 香港專業婚姻及家庭治療"
-            className="h-24 w-auto sm:h-[108px]"
+            className="h-16 w-auto sm:h-[72px]"
             fetchPriority="high"
           />
         </a>
