@@ -5,13 +5,13 @@ import Footer from "@/components/Footer";
 import { WHATSAPP_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "服務範圍 | 房角石家庭服務中心",
+  title: "專業心理輔導、婚姻及家庭治療服務 | 房角石家庭服務中心",
   description:
-    "香港專業婚姻輔導、家庭治療、情緒壓力輔導及心理創傷治療服務。由美國 AAMFT 臨床院士主理，提供個人、伴侶及家庭全面心理輔導。",
+    "房角石家庭服務中心提供專業、保密、貼心的心理輔導服務。專長處理夫妻衝突、婚外情修復、家庭暴力創傷、隱蔽青年及婆媳衝突。辦事處位於香港上環及灣仔。",
   openGraph: {
-    title: "服務範圍 | 房角石家庭服務中心",
+    title: "專業心理輔導、婚姻及家庭治療服務 | 房角石家庭服務中心",
     description:
-      "香港專業婚姻輔導、家庭治療、情緒壓力輔導及心理創傷治療服務。",
+      "房角石家庭服務中心提供專業、保密、貼心的心理輔導服務。專長處理夫妻衝突、婚外情修復、家庭暴力創傷、隱蔽青年及婆媳衝突。辦事處位於香港上環及灣仔。",
     images: [
       {
         url: "https://static.wixstatic.com/media/b709e0_ec1a15e211554eb49239af1b26aff339%7Emv2.jpg",
@@ -99,11 +99,12 @@ export default function ServicesPage() {
           </div>
 
           {/* Banner image */}
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex justify-center px-4 sm:px-0">
             <img
-              src="/image002.png"
-              alt="房角石家庭服務中心 — 專業婚姻輔導及家庭治療"
-              className="h-auto w-full max-w-2xl rounded-2xl object-cover shadow-sm"
+              src="/cornerstone-family-service-centre-services.webp"
+              alt="房角石家庭服務中心 - 專業婚姻與家庭系統治療輔導"
+              loading="lazy"
+              className="h-auto w-full max-w-md rounded-2xl object-cover shadow-sm sm:max-w-lg"
             />
           </div>
         </section>
