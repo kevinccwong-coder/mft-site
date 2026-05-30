@@ -182,6 +182,11 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: true,
       },
+      {
+        source: "/blank-5/categories/:path*",
+        destination: "/blog",
+        permanent: true,
+      },
 
       // ── Old file extensions → best match or home ──
       {
