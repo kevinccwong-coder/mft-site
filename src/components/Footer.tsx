@@ -33,7 +33,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-white/75">
-              家庭是社會的基石，我們願意與你共同面對你的挑戰。
+              家庭是社會的基石，我們與你共同面對你的挑戰。
             </p>
           </div>
 

@@ -51,7 +51,7 @@ export default function Hero() {
           <h2 className="text-3xl font-bold leading-[1.4] tracking-tight text-secondary sm:text-4xl lg:text-5xl">
             家庭是社會的基石，
             <br />
-            我們願意與你共同面對挑戰
+            我們與你共同面對挑戰
           </h2>
           <p className="mt-5 text-base leading-relaxed text-secondary/75 sm:text-lg">
             由香港大學畢業、美國認證的婚姻及家庭治療師主理，
