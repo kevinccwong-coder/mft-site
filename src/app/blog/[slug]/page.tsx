@@ -87,6 +87,13 @@ export default async function PostPage({ params }: Props) {
             {/* Article body — renders markdown-style content */}
             <article className="prose-custom">
               {post.content.split("\n").map((line, i) => {
+                // Convert [text](url) markdown links to JSX
+                const rendered = line.replace(
+                  /\[([^\]]+)\]\(([^)]+)\)/g,
+                  (_, text, url) =>
+                    `<a href="${url}" class="text-primary hover:underline">${text} ↗</a>`
+                );
+
                 if (line.startsWith("### ")) {
                   return (
                     <h3 key={i} className="mt-8 mb-4 text-lg font-semibold text-secondary">
@@ -105,9 +112,11 @@ export default async function PostPage({ params }: Props) {
                   return null;
                 }
                 return (
-                  <p key={i} className="mb-4 text-base leading-[1.9] text-secondary/75">
-                    {line}
-                  </p>
+                  <p
+                    key={i}
+                    className="mb-4 text-base leading-[1.9] text-secondary/75"
+                    dangerouslySetInnerHTML={{ __html: rendered }}
+                  />
                 );
               })}
             </article>

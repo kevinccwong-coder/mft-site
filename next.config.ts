@@ -84,6 +84,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/single-post/2018/04/16/%E5%A9%86%E5%AA%B3%E8%A1%9D%E7%AA%81",
+        destination: "/blog/mother-in-law-conflict",
+        permanent: true,
+      },
+      {
         source: "/single-post/2016/06/23/%E5%A9%86%E5%AA%B3%E8%A1%9D%E7%AA%81%EF%BC%88%E4%BA%8C%EF%BC%89",
         destination: "/blog/mother-in-law-conflict-2",
         permanent: true,
