@@ -38,20 +38,20 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Headline — h1 for SEO keywords, h2 for brand slogan */}
+        {/* Headline — h1 with target keywords, h2 for brand slogan */}
         <div
           className={
             "mx-auto max-w-3xl text-center transition-all duration-700 " +
             (visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0")
           }
         >
-          <h1 className="mb-5 inline-block rounded-full border border-primary/20 bg-primary-light/50 px-4 py-1.5 text-xs font-semibold tracking-wide text-primary-dark">
-            香港專業婚姻及家庭治療
+          <h1 className="text-3xl font-bold leading-[1.4] tracking-tight text-secondary sm:text-4xl lg:text-5xl">
+            香港專業婚姻輔導、
+            <br className="hidden sm:inline" />
+            家庭治療及心理創傷治療
           </h1>
-          <h2 className="text-3xl font-bold leading-[1.4] tracking-tight text-secondary sm:text-4xl lg:text-5xl">
-            家庭是社會的基石，
-            <br />
-            我們與你共同面對挑戰
+          <h2 className="mt-4 text-base font-semibold leading-relaxed tracking-wide text-primary/80 sm:text-lg">
+            家庭是社會的基石，我們與你共同面對挑戰
           </h2>
           <p className="mt-5 text-base leading-relaxed text-secondary/75 sm:text-lg">
             由香港大學畢業、美國認證的婚姻及家庭治療師主理，
