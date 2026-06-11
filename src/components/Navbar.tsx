@@ -6,6 +6,7 @@ import { Menu, X, Phone, MessageCircle } from "lucide-react";
 const navLinks = [
   { label: "關於我們", href: "/#about" },
   { label: "服務範圍", href: "/services" },
+  { label: "婚姻輔導", href: "/marriage-counseling" },
   { label: "收費及預約", href: "/pricing" },
   { label: "常見問題", href: "/faq" },
   { label: "網誌", href: "/blog" },

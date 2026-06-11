@@ -134,6 +134,17 @@ export default function ServicesPage() {
                     </p>
                     <p className="mt-3 text-sm leading-relaxed text-secondary/70">
                       {s.desc}
+                      {s.title === "婚姻輔導及家庭治療" && (
+                        <>
+                          {" "}
+                          <a
+                            href="/marriage-counseling"
+                            className="text-primary hover:underline"
+                          >
+                            了解更多婚姻輔導詳情 →
+                          </a>
+                        </>
+                      )}
                       {s.title === "心理創傷治療" && (
                         <>
                           {" "}

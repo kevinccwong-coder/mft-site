@@ -130,6 +130,16 @@ export default function Hero() {
         <div className="mt-16 flex animate-pulse justify-center">
           <ChevronDown size={18} className="text-secondary/70" />
         </div>
+
+        {/* Internal link to pillar page */}
+        <div className="mt-6 text-center">
+          <a
+            href="/marriage-counseling"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-primary transition-colors hover:text-primary-dark"
+          >
+            了解我們的婚姻輔導服務 →
+          </a>
+        </div>
       </div>
     </section>
   );
