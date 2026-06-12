@@ -44,7 +44,7 @@ export default async function PostPage({ params }: Props) {
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap items-center gap-3 text-xs text-secondary/70">
               <span className="rounded-full bg-primary-light/60 px-3 py-1 font-medium text-primary-dark">
-                {post.category}
+                {Array.isArray(post.category) ? post.category.join(" · ") : post.category}
               </span>
               <span className="inline-flex items-center gap-1">
                 <Calendar size={12} aria-hidden />
