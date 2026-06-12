@@ -92,7 +92,7 @@ export default function ServicesPage() {
               專業輔導，照顧你的需要
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-secondary/70">
-              我們提供個人、伴侶及家庭的全面<a href="https://www.chp.gov.hk/mhi/index_en.html" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:text-primary-dark">心理輔導服務</a>，按你的獨特處境，度身訂造治療方案。
+              我們提供個人、伴侶及家庭的全面<a href="https://www.chp.gov.hk/mhi/index_en.html" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary-dark">心理輔導服務</a>，按你的獨特處境，度身訂造治療方案。
               <br />
               所有服務均由美國婚姻及家庭治療協會（AAMFT）臨床院士主理。
             </p>

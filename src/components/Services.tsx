@@ -54,7 +54,7 @@ export default function Services() {
             專業輔導，照顧你的需要
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-secondary/75">
-            我們提供個人、伴侶及家庭的全面<a href="https://www.chp.gov.hk/mhi/index_en.html" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:text-primary-dark">心理輔導服務</a>，
+            我們提供個人、伴侶及家庭的全面<a href="https://www.chp.gov.hk/mhi/index_en.html" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary-dark">心理輔導服務</a>，
             <br className="hidden sm:inline" />
             按你的獨特處境，度身訂造治療方案。
           </p>
