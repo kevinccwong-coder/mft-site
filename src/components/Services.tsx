@@ -54,7 +54,7 @@ export default function Services() {
             專業輔導，照顧你的需要
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-secondary/75">
-            我們提供個人、伴侶及家庭的全面心理輔導服務，
+            我們提供個人、伴侶及家庭的全面<a href="https://www.chp.gov.hk/mhi/index_en.html" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:text-primary-dark">心理輔導服務</a>，
             <br className="hidden sm:inline" />
             按你的獨特處境，度身訂造治療方案。
           </p>
@@ -87,7 +87,16 @@ export default function Services() {
                 {s.highlights.map((h, j) => (
                   <li key={j} className="flex items-start gap-2 text-sm text-secondary/70">
                     <span className="mt-0.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-primary/60" aria-hidden />
-                    {h.includes("C-PTSD") ? (
+                    {h.includes("焦慮症／驚恐症") ? (
+                      <a
+                        href="https://www3.ha.org.hk/cph/imh/tc/mental-health-info/2/3/4/generalized-anxiety-disorder-and-phobic-disorders"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline"
+                      >
+                        {h} ↗
+                      </a>
+                    ) : h.includes("C-PTSD") ? (
                       <a
                         href="https://oxfordhealth.nhs.uk/ohspic/problems/c-ptsd/"
                         target="_blank"

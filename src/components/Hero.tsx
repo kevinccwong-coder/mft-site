@@ -56,7 +56,7 @@ export default function Hero() {
           <p className="mt-5 text-base leading-relaxed text-secondary/75 sm:text-lg">
             由香港大學畢業、美國認證的婚姻及家庭治療師主理，
             <br className="hidden sm:inline" />
-            提供專業、保密、貼心的心理輔導服務。
+            提供專業、保密、貼心的<a href="https://www.chp.gov.hk/mhi/index_en.html" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:text-primary-dark">心理輔導服務</a>。
           </p>
         </div>
 
