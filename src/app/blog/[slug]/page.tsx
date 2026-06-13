@@ -87,12 +87,14 @@ export default async function PostPage({ params }: Props) {
             {/* Article body — renders markdown-style content */}
             <article className="prose-custom">
               {post.content.split("\n").map((line, i) => {
-                // Convert [text](url) markdown links to JSX
-                const rendered = line.replace(
-                  /\[([^\]]+)\]\(([^)]+)\)/g,
-                  (_, text, url) =>
-                    `<a href="${url}" class="text-primary hover:underline">${text} ↗</a>`
-                );
+                // Convert [text](url) markdown links and **bold** to HTML
+                const rendered = line
+                  .replace(
+                    /\[([^\]]+)\]\(([^)]+)\)/g,
+                    (_, text, url) =>
+                      `<a href="${url}" class="text-primary hover:underline">${text} ↗</a>`
+                  )
+                  .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
 
                 if (line.startsWith("### ")) {
                   return (
@@ -103,9 +105,13 @@ export default async function PostPage({ params }: Props) {
                 }
                 if (line.startsWith("**") && line.endsWith("**")) {
                   return (
-                    <p key={i} className="mt-4 mb-2 font-semibold text-secondary">
-                      {line.replace(/\*\*/g, "")}
-                    </p>
+                    <p
+                      key={i}
+                      className="mt-4 mb-2 font-semibold text-secondary"
+                      dangerouslySetInnerHTML={{
+                        __html: rendered.replace(/<\/?strong>/g, ""),
+                      }}
+                    />
                   );
                 }
                 if (line.trim() === "") {
