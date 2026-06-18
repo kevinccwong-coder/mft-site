@@ -2,11 +2,11 @@ import type { NextConfig } from "next";
 
 const cspHeader = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com;
   style-src 'self' 'unsafe-inline';
   img-src 'self' blob: data: https://static.wixstatic.com;
   font-src 'self' data:;
-  connect-src 'self' https://*.vercel.app;
+  connect-src 'self' https://*.vercel.app https://www.google-analytics.com https://analytics.google.com;
   frame-ancestors 'none';
   form-action 'self';
   base-uri 'self';
