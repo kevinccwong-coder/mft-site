@@ -84,6 +84,31 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blog/%E7%82%BA%E4%BB%80%E9%BA%BC%E5%A9%9A%E5%A4%96%E6%83%85%EF%BC%88%E6%88%96%E7%A8%B1%E5%A4%96%E9%81%87%E3%80%81%E5%87%BA%E8%BB%8C%EF%BC%89%E5%A6%82%E6%AD%A4%E6%99%AE%E9%81%8D%E5%91%A2%EF%BC%9F",
+        destination: "/blog/why-affairs-common",
+        permanent: true,
+      },
+      {
+        source: "/single-post/%E5%BF%83%E7%90%86%E8%BC%94%E5%B0%8E%E6%9C%89%E7%94%A8%E5%97%8E%EF%BC%9F",
+        destination: "/blog/is-counseling-useful",
+        permanent: true,
+      },
+      {
+        source: "/single-post/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%9C%80%E8%A6%81%E5%A9%9A%E5%A7%BB%E8%BC%94%E5%B0%8E%E5%91%A2%EF%BC%9F",
+        destination: "/blog/why-marriage-counseling",
+        permanent: true,
+      },
+      {
+        source: "/single-post/2017/05/30/%E5%A4%AB%E5%A6%BB%E9%97%9C%E4%BF%82%E6%9C%83%E5%BD%B1%E9%9F%BF%E5%AD%A9%E5%AD%90%E6%83%85%E7%B7%92%E6%88%96%E7%B2%BE%E7%A5%9E%E5%81%A5%E5%BA%B7%E5%97%8E%EF%BC%9F",
+        destination: "/blog/marital-conflict-affects-children",
+        permanent: true,
+      },
+      {
+        source: "/single-post/2017/05/30/3-%E7%95%8C%E7%B7%9A",
+        destination: "/blog/marital-conflict-resolution",
+        permanent: true,
+      },
+      {
         source: "/single-post/2016/10/12/%E5%A4%AB%E5%A6%BB%E8%A1%9D%E7%AA%81",
         destination: "/blog/marital-conflict-resolution",
         permanent: true,
