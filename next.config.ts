@@ -121,6 +121,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blog/categories/:path*",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
         source: "/blog-feed.xml",
         destination: "/blog",
         permanent: true,
@@ -195,6 +200,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       { source: "/blank-2", destination: "/services", permanent: true },
+      { source: "/blank-3", destination: "/contact", permanent: true },
 
       // ── Legacy Wix paths ──
       {
