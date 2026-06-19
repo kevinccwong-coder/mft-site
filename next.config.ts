@@ -194,7 +194,7 @@ const nextConfig: NextConfig = {
         destination: "/contact",
         permanent: true,
       },
-      { source: "/blank-2", destination: "/contact", permanent: true },
+      { source: "/blank-2", destination: "/services", permanent: true },
 
       // ── Legacy Wix paths ──
       {
