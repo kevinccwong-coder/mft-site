@@ -1,6 +1,7 @@
 export interface Post {
   slug: string;
   title: string;
+  seoTitle?: string;
   excerpt: string;
   date: string;
   category: string | string[];
@@ -231,7 +232,8 @@ Bowen家庭治療理論指出，許多心理困擾源於「自我分化」不足
   },
   {
     slug: "marital-conflict-affects-children",
-    title: "香港家庭輔導｜兒童心理健康｜家庭治療-親子關係",
+    title: "夫妻關係會影響孩子情緒或精神健康嗎？",
+    seoTitle: "香港家庭輔導｜兒童心理健康｜家庭治療-親子關係",
     excerpt:
       "你的孩子情緒、心理或精神健康嗎？兒童的情緒行為問題往往與家庭系統失衡相關。香港專業家庭輔導，專長打開家庭的枷鎖。AAMFT臨床院士主理。設上環或灣仔輔導室。立即預約。",
     date: "2017-05-30",

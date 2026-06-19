@@ -17,11 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
+  const seoTitle = post.seoTitle || post.title;
   return {
-    title: `${post.title} | 房角石家庭服務中心`,
+    title: `${seoTitle} | 房角石家庭服務中心`,
     description: post.excerpt,
     openGraph: {
-      title: post.title,
+      title: seoTitle,
       description: post.excerpt,
       images: post.image
         ? [{ url: post.image, width: 1000, height: 559, alt: post.title }]
