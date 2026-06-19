@@ -88,7 +88,7 @@ Bowen家庭治療理論指出，許多心理困擾源於「自我分化」不足
 	延伸閱讀：[創傷治療：從生存模式到真正的活著——理解4F反應與復原之路](/blog/cptsd-4f-recovery)`,
   },
   {
-    slug: "marriage-systemic-reconstruction",
+    slug: "marriage-relationship-reconstruction",
     title: "婚姻關係的系統性重構：從互動循環到深層連結",
     excerpt:
       "婚姻就像一棵需要細心呵護的植物，若缺乏關注和養分，便容易枯萎。當你感覺夫妻間的溝通變得困難，或是情感漸行漸遠，專業的婚姻輔導可以幫助你們重新找回愛的溫度……",

@@ -371,7 +371,7 @@ export default function MarriageCounselingPage() {
                   </li>
                   <li>
                     <a
-                      href="/blog/marriage-systemic-reconstruction"
+                      href="/blog/marriage-relationship-reconstruction"
                       className="group inline-flex items-center gap-1.5 text-sm text-secondary/75 transition-colors hover:text-primary"
                     >
                       <ChevronRight size={13} className="shrink-0 text-primary/60" aria-hidden />
