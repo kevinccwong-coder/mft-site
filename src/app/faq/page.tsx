@@ -5,12 +5,12 @@ import Footer from "@/components/Footer";
 import FAQContent from "./FAQContent";
 
 export const metadata: Metadata = {
-  title: "常見問題 | 房角石家庭服務中心",
+  title: "香港情緒困擾及壓力輔導｜焦慮症・驚恐症・工作Burnout｜心理輔導｜房角石家庭服務中心",
   description:
-    "關於心理輔導、婚姻治療及家庭治療的常見問題：治療流程、收費、保密原則、伴侶不願出席怎麼辦等。首次接受輔導的疑問一一解答。",
+    "長期焦慮、驚恐發作、工作burnout影響生活？香港專業情緒輔導，提供安全空間處理焦慮症、驚恐症及壓力創傷。AAMFT臨床院士主理，設上環或灣仔輔導室。立即預約。",
   openGraph: {
-    title: "常見問題 | 房角石家庭服務中心",
-    description: "關於心理輔導、婚姻治療及家庭治療的常見問題。",
+    title: "香港情緒困擾及壓力輔導｜焦慮症・驚恐症・工作Burnout｜心理輔導｜房角石家庭服務中心",
+    description: "長期焦慮、驚恐發作、工作burnout影響生活？香港專業情緒輔導，提供安全空間處理焦慮症、驚恐症及壓力創傷。AAMFT臨床院士主理，設上環或灣仔輔導室。立即預約。",
     images: [
       {
         url: "https://static.wixstatic.com/media/b709e0_ec1a15e211554eb49239af1b26aff339%7Emv2.jpg",
