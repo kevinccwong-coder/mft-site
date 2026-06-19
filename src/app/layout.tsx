@@ -205,6 +205,7 @@ export default function RootLayout({
     <html lang="zh-HK" className="h-full antialiased">
       <head>
         <meta name="format-detection" content="telephone=no" />
+        <meta name="google-site-verification" content="google4bdae2726970b497" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
