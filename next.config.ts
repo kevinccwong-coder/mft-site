@@ -197,7 +197,7 @@ const nextConfig: NextConfig = {
         destination: "/pricing",
         permanent: true,
       },
-      { source: "/blank-4", destination: "/pricing", permanent: true },
+      { source: "/blank-4", destination: "/services", permanent: true },
       { source: "/fees-booking", destination: "/pricing", permanent: true },
 
       // ── FAQ ──
